@@ -778,3 +778,161 @@ button {
   margin-top: 48px;
   min-width: 193px;
 }
+
+/* Pricing */
+.pricing {
+  padding: 86px 0;
+  background: #fff6ed;
+}
+
+.pricing__container {
+  max-width: 994px;
+}
+
+.pricing__top-heading,
+.pricing__top-desc {
+  text-align: center;
+}
+
+.pricing__top-desc {
+  margin-left: auto;
+  margin-right: auto;
+  width: 709px;
+}
+
+.pricing__switch-wrap {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+.pricing__switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 276px;
+  height: 56px;
+  padding: 0 40px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 91, 46, 0.6);
+  user-select: none;
+  cursor: pointer;
+}
+
+.pricing__switch-label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 140px;
+  height: 100%;
+  border-radius: inherit;
+  background: #ff5b2e;
+}
+
+.pricing__switch-value {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label::before {
+  width: 131px;
+  left: auto;
+  right: 0;
+}
+
+.pricing__switch-input:not(:checked)
+  + .pricing__switch-label
+  .pricing__switch-value:nth-child(2),
+.pricing__switch-input:checked
+  + .pricing__switch-label
+  .pricing__switch-value:nth-child(1) {
+  color: #ff5b2e;
+}
+
+.pricing__switch-inner {
+  position: relative;
+}
+
+.pricing__sale-off {
+  position: absolute;
+  top: -10px;
+  right: -112px;
+}
+
+.pricing__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 44px;
+  margin-top: 56px;
+}
+
+.pricing-item {
+  padding: 30px 28px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.pricing-item__type {
+  color: #ff5b2e;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.pricing-item__heading {
+  margin-top: 8px;
+  color: #3f4065;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.pricing-item__price {
+  color: #000958;
+  font-family: 'Sora', sans-serif;
+  margin-top: 24px;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.pricing-item__btn {
+  --height: 44px;
+  margin-top: 22px;
+  font-weight: 500;
+  color: #ff5b2e;
+  font-size: 1.6rem;
+  background: transparent;
+  width: 100%;
+  border-radius: 39px;
+  border: 1px solid rgba(255, 91, 46, 1);
+}
+
+.pricing-item__btn:hover {
+  background: #ff5b2e;
+  color: #fff;
+}
+
+.pricing-item__list {
+  margin-top: 24px;
+  color: #656689;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.pricing-item__item {
+  display: flex;
+  position: relative;
+  margin-top: 18px;
+}
+
+.pricing-item__item::before {
+  content: url(../icon/checked.svg);
+  margin-right: 4px;
+}
