@@ -879,6 +879,10 @@ button {
   border-radius: 20px;
 }
 
+.pricing-item:hover {
+  box-shadow: 0 20px 44px 0 rgba(195, 108, 22, 0.06);
+}
+
 .pricing-item__type {
   color: #ff5b2e;
   font-size: 1.2rem;
@@ -935,4 +939,137 @@ button {
 .pricing-item__item::before {
   content: url(../icon/checked.svg);
   margin-right: 4px;
+}
+
+/* Review */
+.review {
+  padding: 105px 0 53px;
+}
+
+.review__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 44px;
+}
+
+.review__control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 54px;
+  border: 1.5px solid rgba(255, 209, 196, 1);
+  background: transparent;
+  color: var(--color-primary);
+}
+
+.review__control:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.review__control:hover {
+  background: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+  border-color: var(--color-primary);
+}
+
+.review__content {
+  overflow: hidden;
+}
+
+.review__list {
+  display: flex;
+}
+
+.review-item {
+  display: flex;
+  align-items: center;
+  column-gap: 115px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.review-item__media {
+  position: relative;
+  flex-shrink: 0;
+  width: 274px;
+  border-radius: 137px;
+  margin-top: -52px;
+}
+
+.review-item__media::after {
+  position: absolute;
+  content: '';
+  inset: auto 0 0 0;
+  border-radius: inherit;
+  background: #ffda54;
+  height: 82%;
+}
+
+.review-item__img {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: inherit;
+  z-index: 1;
+}
+
+.review-item__quote {
+  margin-top: 24px;
+  width: 553px;
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 1.56;
+}
+
+.review-item__author {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+  color: #282828;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.review-item__author::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  border-radius: 1px;
+  margin-right: 8px;
+}
+
+.review-item__content {
+  margin-top: 28px;
+}
+
+.review__dots {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.review__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  border: 1px solid #ff5b2e;
+}
+
+.review__dot:hover {
+  background: #ff5b2e;
+  cursor: pointer;
+}
+
+.review__dot--active {
+  width: 24px;
+  background: #ff5b2e;
 }
